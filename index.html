@@ -7,28 +7,29 @@
     </head>
     <style>
         
-.float {
-position: sticky;
-width: 40px;
-height: 40px;
-bottom: 30px;
-right: 30px;
-background-color: #4285f4;
-color: #FFF;
-border-radius: 50px;
-text-align: center;
-float: right;
-}
-.float:hover
-{
-    color:black;
-}
+        .float {
+        position: sticky;
+        width: 40px;
+        height: 40px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #4285f4;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        float: right;
+        }
+
+        .float:hover
+        {
+            color:black;
+        }
 
     </style>
     <body id="home">
-            <nav class="navbar navbar-expand-lg navbar-light px-3">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light px-3">
                     <div class="col-10">
-                        <a class="navbar-brand px-3" href="index.html">Jawad Agantal</a>
+                        <a class="navbar-brand px-3" href="index.html"><b>JA</b> | Jawad Agantal</a>
                     </div>
                   <div class="col-2">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,31 +51,42 @@ float: right;
                 </div>
             </nav>
 
-        <div class="container-fluid h-75">
+
+    
+            
+        <div class="min-vh-100">
             <div class="container-xxl">
-            <div class="row justify-content-left align-items-center m-5">
+            <div class="row justify-content-center align-items-center m-5">
+                
                 <div class="w-100 mt-5">
-                    <div class="my-5">
+                    <div class="mt-5 pt-5">
                         <h1>Hello! I am Jawad</h1>
                         <h4>Full-stack web developer</h4>
                     </div>
                 </div>
-                <div class="w-50 mt-5">
-                    <h4>About me</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-                        aboris nisi ut aliquip ex ea commodo consequat.
-                    <p>
+                
+                <div class="card border-0">
+                    <div class="card-body">
+                         <div class="mt-5">
+                            <h4>About me</h4>
+                            <p class="m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+                            <p class="m-auto">do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="m-auto">Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
+                            <p class="m-auto">aboris nisi ut aliquip ex ea commodo consequat.</p>
+                            
+                         </div>
+                    </div>
                 </div>
             </div>
             </div>
         </div>
-
+          
+            
+           
         <div id="projects">  
         </div>
 
-        <div class="container-fluid h-100" style="background-color:black">
+        <div class="min-vh-100" style="background-color:black">
             <div class="container-xxl">
             <div class="row justify-content-center align-items-center m-5">
                 <div class="mt-5">
@@ -98,6 +110,7 @@ float: right;
             </div>
         </div>
 
+
         <footer class="page-footer font-small blue pt-4">
             <div class="container-fluid text-center text-md-left">
                 <div class="footer-copyright text-center py-3">
@@ -107,7 +120,7 @@ float: right;
         </footer>
 
 
-        <a href="#home" class="float" title="Add registry">
+        <a href="#home" class="float" title="Back to top">
             <p class="mt-1">^</p>
         </a>
     </body>
