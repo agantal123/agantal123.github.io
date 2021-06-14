@@ -1,3 +1,10 @@
+        #input:focus
+        {
+            border-color: inherit;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        
         .float {
             position: sticky;
             width: 40px;
@@ -40,13 +47,13 @@
             left: 0;
             }
             
-            h1::before {
+            #myname::before {
             background: var(--bg-color);
             animation: typewriter var(--typewriterSpeed)
                 steps(var(--typewriterCharacters)) 1s forwards;
             }
     
-            h1::after {
+            #myname::after {
             width: 0.125em;
             background: black;
             animation: typewriter var(--typewriterSpeed)
@@ -70,6 +77,7 @@
                 animation: fadeInRight 1s forwards;
             }
 
+            
             @keyframes typewriter {
             to {
                 left: 100%;
