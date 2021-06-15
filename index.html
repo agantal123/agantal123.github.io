@@ -9,6 +9,7 @@
         <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     
@@ -127,41 +128,42 @@
                 <h3 class="text-dark mt-5 position-relative">Get in touch with me!</h3>
                 <div class="col mt-5">
                     <div class="mb-5">
-                     <h4 class="text-dark">My socials</h4>
+                     <h4 class="text-dark">My socials & contact info</h4>
                     </div>
                      <ul class="list-group list-group-flush">
                         <li class="list-group-item"><i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jagantal">@jagantal</a></li>
                         <li class="list-group-item"><i class="fa fa-github"></i> <a href="https://www.github.com/agantal123">@agantal123</a></li>
-                        <li class="list-group-item"><i class="fa fa-envelope-open"></i> agantal789@gmail.com</li>
-                        <li class="list-group-item"><i class="fa fa-phone"></i> 099798*****</li>
+                        <li class="list-group-item"><i class="fa fa-envelope-open"></i> <a href="mailto:agantal789@gmail.com">agantal789@gmail.com</a></li>
+                        <li class="list-group-item"><i class="fa fa-phone"></i> 099798*****  <i class="fa fa-question-circle"  data-toggle="tooltip" data-placement="top" title="Send me an email to request phone number"></i></li>
                       </ul>
                 </div>
                 <div class="col mt-5">
                     <div class="mb-5">
                      <h4 class="text-dark">Contact me via email</h4>
                     </div>
-                    <form>
-                        <div class="form-row">
+                    <form action="https://formspree.io/f/mdoyzdan"
+                    method="POST">
+                        <!-- <div class="form-row">
                           <div class="form-group col-md-6">
-                            <label for="inputEmail4">First Name *</label>
+                            <label for="inputEmail4">Name *</label>
                             <input id="input" type="text" class="form-control" id="inputfname" placeholder="First name">
                           </div>
                           <div class="form-group col-md-6">
-                            <label for="inputPassword4">Last Name *</label>
+                            <label for="inputPassword4">&nbsp</label>
                             <input id="input" type="text" class="form-control" id="inputlname" placeholder="Last Name">
                           </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
-                          <label for="inputAddress">Email *</label>
-                          <input id="input" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          <label for="inputAddress">Email address *</label>
+                          <input id="input" type="email" class="form-control" name="sender" placeholder="Your email address">
                         </div>
                         <div class="form-group">
                           <label for="inputAddress2">Subject *</label>
-                          <input id="input" type="text" class="form-control" id="inputsubject4" placeholder="Subject">
+                          <input id="input" type="text" class="form-control" name="subject" placeholder="Subject">
                         </div>
                         <div class="form-group">
                             <label for="inputAddress2">Message *</label>
-                            <textarea id="input" class="form-control" rows="3" placeholder="Your message"></textarea>
+                            <textarea id="input" class="form-control" rows="3" name="message" placeholder="Your message"></textarea>
                           </div>
                         <button type="submit" class="btn btn-outline-dark">Submit</button>
                       </form>
@@ -222,6 +224,10 @@
                 }
                 }
             });
+
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
         </script>
  
 
