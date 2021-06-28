@@ -25,7 +25,7 @@
     
             :root {
             --bg-color: #fff;
-            --typewriterSpeed: 3s;
+            --typewriterSpeed: 2s;
             --typewriterCharacters: 24;
             }
     
@@ -67,14 +67,14 @@
             font-weight: 400;
             opacity: 0;
             transform: translateY(3rem);
-            animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
+            animation: fadeInUp 1s ease calc(var(--typewriterSpeed)) forwards;
             }
 
             #aboutme
             {
                 opacity: 0;
                 transform: translateX(-3rem);
-                animation: fadeInRight 1s forwards;
+                animation: fadeInRight 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
             }
 
 
